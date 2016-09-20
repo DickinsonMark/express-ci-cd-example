@@ -1,5 +1,7 @@
 # Continuous Integration and Deployment with GitHub, Travis, and Heroku
 
+[![Build Status](https://travis-ci.org/DickinsonMark/express-ci-cd-example.svg?branch=master)](https://travis-ci.org/DickinsonMark/express-ci-cd-example)
+
 ## Deploy to Heroku
 
 1. Create app on heroku: `heroku create`

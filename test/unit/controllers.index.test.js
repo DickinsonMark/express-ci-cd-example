@@ -9,7 +9,7 @@ describe('controllers : index', () => {
 
   describe('sum()', () => {
     it('should return a total', (done) => {
-      indexController.sum(1, 4, (err, total) => {
+      indexController.sum(1, 3, (err, total) => {
         should.not.exist(err);
         total.should.eql(4);
         done();
