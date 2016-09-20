@@ -2,6 +2,16 @@ language:
 - node_js
 node_js:
 - '6'
+- '5'
 env:
   global:
   - NODE_ENV=test
+deploy:
+  provider: heroku
+  api_key:
+    secure: nBS61WJ761hPuU5E+2SRHg1MWs2J9mtWEfKz5kLEvymShmI2ex3/0gYCAkwQ6cIpU2OCups6KR4N4gM86WOGzR/utzKZJreRO7SsqVE1lauWVvAB99oNtZsYr+4mnwQ+TfzYHAI5lIfg3MxYQ5MIMes9/2e74L7dM59gfjUbfandgqoXhpnzm1cWt1I18jvY+97OYwVroCzMP7RYceAOHMnfGU1q3JxtNdvlee2slWbMkJnLUgsUShl+lyAGdfW6xuz2hPcQmh1Bkq17cXTEEIkn1AsApduaep7Hy1gwqZP8U3KY1jmlf4hyo1VAH0egTYB5pZOropWEZ2k7dVi7j9J8FyOrZRIsRT8pjXqLrbxdKC9l2j4UZneOhNIm2s8m4fIbq2L/EPw2zHtQv9P5R/69CGgSzFEPCE+YgdmiynMYyOMEsoN5Ucgx6p1grP564YS31BSqrfscTrM8kFgZ/xA1yrJONEPsiL7aXEXGn/ypSt2EKhQbd9FI+UMHcmxAf+AVX6XTbFsaVn0P9YkLEuRf+dyjsI2UW0Q1WunKOND/Xa+FyiJGvaWrNfQty265Y/Lf7Xradg7W98PHE5MlKEPCR0hM4PITp2gsTOarboyzbqXijUUzjaXd1tMDr+w0NlLd8GXgV5QmgBdSy1aPOJBu2V60whJxSzA/f0PhA3c=
+  app: boiling-mountain-80591
+  on:
+    repo: DickinsonMark/express-ci-cd-example
+    branch: master
+    node: '6'
